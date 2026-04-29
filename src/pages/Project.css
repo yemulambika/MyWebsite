@@ -1,0 +1,76 @@
+.projects-wrapper {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* CARD */
+.project-card {
+  min-height: 420px; /* equal height fix */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+
+/* TEXT */
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  color: #cbd5f5;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* SECTION */
+.section {
+  margin-bottom: 15px;
+}
+
+.section h4 {
+  color: #9aa4ff;
+  margin-bottom: 8px;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* SKILLS */
+.skills-section {
+  margin-top: 50px;
+  padding: 25px;
+  text-align: center;
+}
+
+.skills-section h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.skills-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}

@@ -1,137 +1,147 @@
 import React from "react";
 import { Card, Row, Col, Tag, Button } from "antd";
-import WeatherImages from "./WeatherImages";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Project.css";
 
 
 function Projects() {
   const navigate = useNavigate();
-  return (<div>
-    <Row>
-      <div className="projects-container" style={{margin : "20px"}}>
-        <Row gutter={[25, 25]} justify="center">
 
-          <Col span={8}
-            xs={30} md={20} lg={20}>
-            <Card
-              className="project-card"
-              title="🌦️ Weather Dashboard (MERN Stack)"
-              bordered={false}
-              style={{ border : "1px solid black"}}
-            >
-              <p className="project-desc">
-                Full-stack weather analytics platform with real-time weather data,
-                authentication, and interactive charts.
-              </p>
+  return (
+    <div className="projects-wrapper">
 
-              {/* Features */}
-              <div className="section">
-                <h4>🚀 Key Features</h4>
-                <div className="tags">
-                  <Tag color="blue">JWT Auth</Tag>
-                  <Tag color="green">Weather API</Tag>
-                  <Tag color="orange">Charts (Chart.js)</Tag>
-                  <Tag color="purple">PDF Export</Tag>
-                  <Tag color="cyan">CORS Setup</Tag>
-                  <Tag color="red">MongoDB</Tag>
-                </div>
+      {/* TITLE */}
+      <h2 className="projects-title">🚀 Projects</h2>
+
+      {/* PROJECT GRID */}
+      <Row gutter={[28, 28]} justify="center">
+
+        {/* WEATHER */}
+        <Col xs={24} sm={24} md={12} lg={10}>
+          <Card className="project-card glass-card" bordered={false}>
+            <h3>🌦️ Weather Dashboard</h3>
+
+            <p className="project-desc">
+              Full-stack weather analytics platform with authentication,
+              real-time data, and interactive charts.
+            </p>
+
+            <div className="section">
+              <h4>Key Features</h4>
+              <div className="tags">
+                <Tag color="blue">JWT Auth</Tag>
+                <Tag color="green">Weather API</Tag>
+                <Tag color="orange">Charts</Tag>
+                <Tag color="purple">PDF Export</Tag>
+                <Tag color="cyan">CORS</Tag>
+                <Tag color="red">MongoDB</Tag>
               </div>
+            </div>
 
-              {/* Tech Stack */}
-              <div className="section">
-                <h4>🧠 Tech Stack</h4>
-                <p>React • Node.js • Express • MongoDB • JWT • Chart.js</p>
+            <div className="section">
+              <h4>Tech Stack</h4>
+              <p style={{color : "white"}}>React • Node • Express • MongoDB • JWT • Chart.js</p>
+            </div>
+
+            <div className="buttons">
+              <Button type="primary" href="https://movie-place-flax.vercel.app/" target="_blank">
+                Live Demo
+              </Button>
+              <Button onClick={() => navigate("/weather-images")}>
+                Screenshots
+              </Button>
+            </div>
+          </Card>
+        </Col>
+
+        {/* MOVIE */}
+        <Col xs={24} sm={24} md={12} lg={10}>
+          <Card className="project-card glass-card" bordered={false}>
+            <h3>🎬 Movie Place</h3>
+
+            <p className="project-desc">
+              Movie discovery platform using TMDB API with watchlist,
+              trailer playback, filtering, and search.
+            </p>
+
+            <div className="section">
+              <h4>Key Features</h4>
+              <div className="tags">
+                <Tag color="blue">TMDB API</Tag>
+                <Tag color="red">Watchlist</Tag>
+                <Tag color="green">Genre Filter</Tag>
+                <Tag color="orange">Search</Tag>
+                <Tag color="purple">Rating Sort</Tag>
+                <Tag color="cyan">Trailer</Tag>
+                <Tag color="geekblue">AntD UI</Tag>
               </div>
+            </div>
 
-              {/* Links */}
-              <div className="buttons">
+            <div className="section">
+              <h4>Tech Stack</h4>
+              <div className="tags" style={{color : "white"}}>React • Node • Express • TMDB API • Ant Design</div>
+            </div>
 
+            <div className="buttons">
+              <Button type="primary" href="https://movie-place-flax.vercel.app/" target="_blank">
+                Live Demo
+              </Button>
+              <Button onClick={() => navigate("/movie-images")}>
+                Screenshots
+              </Button>
+            </div>
+          </Card>
+        </Col>
 
-                <Button
-                  type="primary"
-                  href="https://weather-dashboard-frontend-1.onrender.com"
-                  target="_blank"
-                  style={{margin : "10px"}}
-                >
-                  Live Demo
-                </Button>
+        {/* GITHUB */}
+        <Col xs={24} sm={24} md={12} lg={10}>
+          <Card className="project-card glass-card" bordered={false}>
+            <h3>💻 More on GitHub</h3>
 
-                <Button onClick={() => navigate("/weather-images")}>
-                  View Screenshots
-                </Button>
+            <p className="project-desc">
+              Additional projects including mini apps and games.
+            </p>
+
+            <div className="section">
+              <h4>Includes</h4>
+              <div className="tags">
+                <Tag>To-Do</Tag>
+                <Tag>Tic-Tac-Toe</Tag>
+                <Tag>Simon</Tag>
+                <Tag>Drum Kit</Tag>
+                <Tag>Dice</Tag>
               </div>
-            </Card>
-          </Col>
+            </div>
 
-        </Row>
-      </div>
-
-      <div className="projects-container" style={{margin : "20px"}}>
-        <Row gutter={[25, 25]} justify="center">
-
-          <Col span={8}
-            xs={30} md={20} lg={20}>
-            <Card
-              className="project-card"
-              title="🌦️ Weather Dashboard (MERN Stack)"
-              bordered={false}
-              style={{ border : "1px solid black"}}
-            >
-              <p className="project-desc">
-                Full-stack weather analytics platform with real-time weather data,
-                authentication, and interactive charts.
-              </p>
-
-              {/* Features */}
-              <div className="section">
-                <h4>🚀 Key Features</h4>
-                <div className="tags">
-                  <Tag color="blue">JWT Auth</Tag>
-                  <Tag color="green">Weather API</Tag>
-                  <Tag color="orange">Charts (Chart.js)</Tag>
-                  <Tag color="purple">PDF Export</Tag>
-                  <Tag color="cyan">CORS Setup</Tag>
-                  <Tag color="red">MongoDB</Tag>
-                </div>
+            {/* SKILLS INSIDE (compact version) */}
+            <div className="section">
+              <h4>Tech Skills</h4>
+              <div className="tags">
+                <Tag color="blue">HTML</Tag>
+                <Tag color="green">CSS</Tag>
+                <Tag color="gold">JavaScript</Tag>
+                <Tag color="cyan">React</Tag>
+                <Tag color="purple">Node</Tag>
+                <Tag color="red">MongoDB</Tag>
+                <Tag color="orange">Express</Tag>
               </div>
+            </div>
 
-              {/* Tech Stack */}
-              <div className="section">
-                <h4>🧠 Tech Stack</h4>
-                <p>React • Node.js • Express • MongoDB • JWT • Chart.js</p>
-              </div>
+            <div className="buttons">
+              <Button
+                type="primary"
+                href="https://github.com/yemulambika"
+                target="_blank"
+              >
+                View Repositories
+              </Button>
+            </div>
+          </Card>
+        </Col>
 
-              {/* Links */}
-              <div className="buttons">
+      </Row>
 
-
-                <Button
-                  type="primary"
-                  href="http://movie-place-pnvhe59fz-ambika-s-projects.vercel.app/watchList"
-                  target="_blank"
-                  style={{margin : "10px"}}
-                >
-                  Live Demo
-                </Button>
-
-                <Button onClick={() => navigate("/weather-images")}>
-                  View Screenshots
-                </Button>
-              </div>
-            </Card>
-          </Col>
-
-        </Row>
-      </div>
-
-      <Col span={8}>
-        <Card title="BookMyShow">
-          MERN + API integration + antD
-        </Card>
-      </Col>
-    </Row>
-  </div>
+    </div>
   );
 }
 
