@@ -44,7 +44,7 @@ function Projects() {
             </div>
 
             <div className="buttons">
-              <Button type="primary" href="https://movie-place-flax.vercel.app/" target="_blank">
+              <Button type="primary" href="https://weather-dashboard-frontend-1.onrender.com/" target="_blank">
                 Live Demo
               </Button>
               <Button onClick={() => navigate("/weather-images")}>

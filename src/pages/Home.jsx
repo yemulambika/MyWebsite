@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Button, Space, Tag } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import "../index.css";
-
+import Resume from "../assets/Weather-Dashboard_photos/Ambika_Yemul_Resume.pdf"
 const { Title, Paragraph } = Typography;
 
 function Home() {
@@ -33,8 +33,11 @@ function Home() {
 
         {/* CTA BUTTONS */}
         <Space size="large" className="hero-buttons">
-          <Button type="primary" href="/resume.pdf" target="_blank">
-            📄 Resume
+          <Button
+            type="primary"
+            onClick={() => window.open(Resume, "_blank")}
+          >
+            📄 Download Resume
           </Button>
 
           <Button

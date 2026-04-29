@@ -47,7 +47,7 @@ function Contact() {
         >
           <MailOutlined /> <b>Email:</b>{" "}
           <a href="mailto:ambika@gmail.com" style={{ color: "#60a5fa" }}>
-            ambika@gmail.com
+            ambikayemul2001@gmail.com
           </a>
         </Paragraph>
 
