@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, Row, Col } from "antd";
-import GFG from "../assets/GFG.jpg";
-import reactCertificate from "../assets/React.png";
-import Data_Structure from "../assets/Data_Structure.png";
-import SQL from "../assets/SQL.png";
+import GFG from "../assets/Certificates_photos/GFG.jpg";
+import reactCertificate from "../assets/Certificates_photos/React.png";
+import Data_Structure from "../assets/Certificates_photos/Data_Structure.png";
+import SQL from "../assets/Certificates_photos/SQL.png";
+import JavaScript from "../assets/Certificates_photos/JavaScript.png";
 import "../index.css";
 
 function Certificates() {
@@ -49,6 +50,15 @@ function Certificates() {
             cover={<img alt="React Certificate" src={reactCertificate} />}
           >
             <h3>React Development</h3>
+            <p>Issued by Scaler Topics</p>
+          </Card>
+        </Col>
+        <Col xs={24} sm={12} md={10} lg={8}>
+          <Card
+            className="cert-card"
+            cover={<img alt="React Certificate" src={JavaScript} />}
+          >
+            <h3>JavaScript</h3>
             <p>Issued by Scaler Topics</p>
           </Card>
         </Col>

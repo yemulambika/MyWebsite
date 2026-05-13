@@ -8,6 +8,7 @@ import Certificates from "./pages/Certificates";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import WeatherImages from "./pages/WeatherImages";
+import AIResumeImages from "./pages/AIResumeImages";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/weather-images" element={<WeatherImages />} />
+        <Route path="/ai-resume-images" element={<AIResumeImages />} />
       </Routes>
     </BrowserRouter>
   );
