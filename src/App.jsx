@@ -9,6 +9,7 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import WeatherImages from "./pages/WeatherImages";
 import AIResumeImages from "./pages/AIResumeImages";
+import PowerBIImages from "./pages/PowerBIImages";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/weather-images" element={<WeatherImages />} />
         <Route path="/ai-resume-images" element={<AIResumeImages />} />
+        <Route path="/powerbi-images" element={<PowerBIImages />} />
       </Routes>
     </BrowserRouter>
   );
